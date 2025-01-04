@@ -10,8 +10,13 @@ import UIKit
 
 class LandingView: UIView {
     
+    //app title
     var instructionTitle: UILabel!
+    
+    // app description for users
     var instructionText: UILabel!
+    //button to guide users in the app
+    
     var startButton: UIButton!
     
     override init(frame: CGRect) {
@@ -60,6 +65,7 @@ class LandingView: UIView {
         addSubview(startButton)
     }
     
+    //sets up constraints for the elements in the view
     func initConstraints() {
         NSLayoutConstraint.activate([
             // Instruction title constraints
@@ -79,7 +85,7 @@ class LandingView: UIView {
 
 }
 
-
+// Previews the view in a window so i dont have to rerun it over and over and over again just to see little changes.
 #Preview {
     LandingView()
 }
