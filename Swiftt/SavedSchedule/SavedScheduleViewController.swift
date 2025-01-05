@@ -18,4 +18,9 @@ class SavedScheduleViewController: UIViewController {
         view = views
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Saved Schedule"
+    }
 }

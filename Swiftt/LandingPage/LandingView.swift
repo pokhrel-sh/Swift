@@ -60,7 +60,7 @@ class LandingView: UIView {
         startButton = UIButton()
         startButton.setTitle("Start", for: .normal)
         startButton.setTitleColor(.white, for: .normal)
-        startButton.backgroundColor = .black
+        startButton.backgroundColor = .lightGray
         startButton.translatesAutoresizingMaskIntoConstraints = false
         addSubview(startButton)
     }
@@ -69,14 +69,14 @@ class LandingView: UIView {
     func initConstraints() {
         NSLayoutConstraint.activate([
             // Instruction title constraints
-            instructionTitle.topAnchor.constraint(equalTo: topAnchor, constant: 100),
+            instructionTitle.topAnchor.constraint(equalTo: topAnchor, constant: 150),
             instructionTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            instructionText.topAnchor.constraint(equalTo: instructionTitle.bottomAnchor, constant: 100),
+            instructionText.topAnchor.constraint(equalTo: instructionTitle.bottomAnchor, constant: 150),
             instructionText.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             instructionText.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             
-            startButton.topAnchor.constraint(equalTo: instructionText.bottomAnchor, constant: 100),
+            startButton.topAnchor.constraint(equalTo: instructionText.bottomAnchor, constant: 250),
             startButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             startButton.heightAnchor.constraint(equalToConstant: 50),
             startButton.widthAnchor.constraint(equalToConstant: 200)
