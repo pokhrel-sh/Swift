@@ -1,4 +1,4 @@
-THis is a work in progress and I will be working on it until it is done. 
+This is a work in progress and I will be working on it until it is done. 
 
 
 The status for the project will be given below with dates.
@@ -9,7 +9,7 @@ The data that this project will be fetching will be from firebase/supabase (I ha
 For the schedule calculation, it will be done on the users' mobile devices (server calculation cost 70x more than just using the phone to calculate the information). 
 
 High Level of the project:
-1. User request course information (by search)
+1. User requests course information (by search)
 2. Fetch the data from supabase
 3. Take the data and present it to users
 4. User adds the data to cart?
