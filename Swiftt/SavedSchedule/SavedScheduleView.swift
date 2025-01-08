@@ -31,7 +31,14 @@ class SavedScheduleView: UIView {
         savedScheduleTitle.textColor = .black
         self.addSubview(savedScheduleTitle)
     }
-
+    
+    func initConstraints() {
+        NSLayoutConstraint.activate([
+            // Instruction title constraints
+            savedScheduleTitle.topAnchor.constraint(equalTo: topAnchor, constant: 150),
+            savedScheduleTitle.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
+    }
     
 }
 
